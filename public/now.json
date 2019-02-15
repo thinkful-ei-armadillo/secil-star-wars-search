@@ -1,0 +1,15 @@
+{
+    "version": 2,
+    "alias": "secilreel-react-star-wars-search",
+    "name": "react-star-wars-search-app",
+    "routes": [
+        {
+          "src": "^/static/(.*)",
+          "dest": "/static/$1"
+        },
+        {
+          "src": ".*",
+          "dest": "/index.html"
+        }
+    ]
+  }
