@@ -22,8 +22,8 @@ searchResults (results) {
       <div className="App">
         <header className="App-header">Star Wars Search App</header>
         <ErrorPage>
-        <SearchForm searchResults={this.searchResults}/>
-        <SearchResultsForm results={this.state.results}/>
+          <SearchForm searchResults={this.searchResults}/>
+          <SearchResultsForm results={this.state.results}/>
         </ErrorPage>
       </div>
     );

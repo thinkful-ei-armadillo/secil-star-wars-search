@@ -22,10 +22,10 @@ class SearchForm extends Component {
       fetch(`https://swapi.co/api/${queryClass}/?search=${query}`)
       .then(res => {
           if (!res.ok) {
-            return res.json().then(error => {throw error})}
+            throw 'error'}
           return res.json()})
       .then(resjson => this.props.searchResults(resjson.results))
-      .catch(error => { console.log((error.message))});
+      .catch(error => {throw new Error('we cannot get the fetch')})
       }
     
     render() {
