@@ -1,0 +1,15 @@
+{
+    "version": 2,
+    "alias": "secilreel-star-wars-search",
+    "name": "star-wars-search-app",
+    "routes": [
+        {
+          "src": "^/static/(.*)",
+          "dest": "/static/$1"
+        },
+        {
+          "src": ".*",
+          "dest": "/index.html"
+        }
+    ]
+  }

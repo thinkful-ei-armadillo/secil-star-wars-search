@@ -18,7 +18,7 @@ export default class ErrorPage extends Component {
 
     render(){
         console.log(this.state.error)
-        if(this.state.hasError){
+        if(this.state.error){
             return (
                 <main className="error-page">
                     <h1>Something seems to have gone wrong</h1>

@@ -17,12 +17,13 @@ class SearchForm extends Component {
   
     getSearchResults(e) {
       e.preventDefault();
+      throw new Error('error');
       let query = this.state.query;
       let queryClass = this.state.queryClass;
       fetch(`https://swapi.co/api/${queryClass}/?search=${query}`)
       .then(res => {
           if (!res.ok) {
-            throw 'error'}
+            throw new Error('error')}
           return res.json()})
       .then(resjson => this.props.searchResults(resjson.results))
       .catch(error => {throw new Error('we cannot get the fetch')})
