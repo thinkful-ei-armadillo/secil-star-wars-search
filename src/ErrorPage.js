@@ -5,19 +5,16 @@ export default class ErrorPage extends Component {
         error: null
     }
 
-    static getDerivedStateFromError (error){
-        console.log(error);
-        this.setState({error});
-    }
+    // static getDerivedStateFromError (error){
+    //     this.setState({error});
+    // }
 
     componentDidCatch (error){
-        console.log(error);
         this.setState({error});
     }
 
 
     render(){
-        console.log(this.state.error)
         if(this.state.error){
             return (
                 <main className="error-page">
