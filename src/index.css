@@ -27,19 +27,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
+.App{
+  margin: auto;
+}
 .defn{
   margin-top: 2rem;
-  margin: auto;
-  text-align: justify;
-  width: 80%;
+  text-align: center;
 }
 
 .tagline{
   margin-top: 1rem;
 }
 
-.choices{
+button, .choices{
   background-color: black;
   color:#faf08e;
 }
