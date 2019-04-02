@@ -30,7 +30,7 @@ code {
 
 .defn{
   margin-top: 2rem;
-  margin-left: 2rem;
+  margin: auto;
   text-align: justify;
   width: 80%;
 }

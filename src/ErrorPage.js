@@ -8,7 +8,6 @@ class ErrorPage extends React.Component {
     }   
     state = {error: null};
     componentDidCatch(error) {
-        console.error(error);
         this.setState({ error });
     }
 
