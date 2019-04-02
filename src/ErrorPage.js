@@ -1,10 +1,20 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
-class ErrorPage extends React.Component {  
+class ErrorPage extends React.Component { 
+    static defaultProps ={
+        history:{
+            push:() => {},
+        },
+    }   
     state = {error: null};
     componentDidCatch(error) {
         console.error(error);
         this.setState({ error });
+    }
+
+    handleClick= ()=>{ 
+        this.setState({error: null})
     }
 
     render() {
@@ -12,7 +22,8 @@ class ErrorPage extends React.Component {
             return (
                 <section className="error container">
                     <p>Sorry, that thing does not exist in Star Wars API!</p>
-                    <p>Try searching for another thing!</p>
+                    <p>Try searching for something else.</p>
+                    <button onClick={this.handleClick}>Go Back!</button>
                 </section>
             );
         }

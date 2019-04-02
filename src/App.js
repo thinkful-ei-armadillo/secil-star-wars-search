@@ -20,8 +20,8 @@ searchResults (results) {
   render() {
     return (
       <div className="App">
-        <header className="App-header">Star Wars Search App</header>
         <ErrorPage>
+          <h1 className="App-header">Star Wars Search App</h1>
           <div className="defn">
           <p>This app allows you to get search results directly from STAR WARS API.</p>
           <p>You can search STAR WARS specific items from the API; so test your familiarity!</p>
