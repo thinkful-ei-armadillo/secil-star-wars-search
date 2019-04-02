@@ -22,9 +22,14 @@ searchResults (results) {
       <div className="App">
         <header className="App-header">Star Wars Search App</header>
         <ErrorPage>
+          <div className="defn">
+          <p>This app allows you to get search results directly from STAR WARS API.</p>
+          <p>You can search STAR WARS specific items from the API; so test your familiarity!</p>
+          <p>Give it a try with Skywalker in characters; or, executer or deathstar in starship!</p>
+          </div>
           <SearchForm searchResults={this.searchResults}/>
           <SearchResultsForm results={this.state.results}/>
-        </ErrorPage>
+          </ErrorPage>
       </div>
     );
   }

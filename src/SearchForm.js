@@ -39,11 +39,14 @@ class SearchForm extends Component {
         return (
             <div className="searchForm">
             <form onSubmit={(e)=>this.getSearchResults(e)}>
-                <label htmlFor="searchQuery">Search the Cosmos</label>
+                <label htmlFor="searchQuery" >Search the Cosmos</label>
                 <br />
-                <input type='text' placeholder='Type a query' name='searchName'
+                <input type='text' placeholder='Type a query' 
+                name='searchName'
+                className="tagline"
                 onChange={(e) => this.setQuery(e.target.value)}/>
-                <select onChange={(e) => this.setFetch(e.target.value)}>
+                <select className="choices"
+                onChange={(e) => this.setFetch(e.target.value)}>
                     <option value="planets">planets</option>
                     <option value="starships">starships</option>
                     <option value="vehicles">vehicles</option>

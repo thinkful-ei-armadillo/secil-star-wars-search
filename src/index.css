@@ -14,11 +14,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: black;
   color: #faf08e;
-  font-size: 2em;
+  font-size: 1rem;
   }
 
-  header {
-    font-size: 4em;
+header {
+  margin-top: 2rem; 
+  font-size: 2rem;
   }
 
 code {
@@ -26,6 +27,21 @@ code {
     monospace;
 }
 
+.defn{
+  margin-top: 2rem;
+  margin-left: 2rem;
+  text-align: justify;
+  width: 80%;
+}
+
+.tagline{
+  margin-top: 1rem;
+}
+
+.choices{
+  background-color: black;
+  color:#faf08e;
+}
 ul{
   list-style: none;
 }

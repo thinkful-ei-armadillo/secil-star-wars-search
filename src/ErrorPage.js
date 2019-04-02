@@ -1,28 +1,22 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-export default class ErrorPage extends Component {
-    state = {
-        error: null
+class ErrorPage extends React.Component {  
+    state = {error: null};
+    componentDidCatch(error) {
+        console.error(error);
+        this.setState({ error });
     }
 
-    // static getDerivedStateFromError (error){
-    //     this.setState({error});
-    // }
-
-    componentDidCatch (error){
-        this.setState({error});
-    }
-
-
-    render(){
-        if(this.state.error){
+    render() {
+        if (this.state.error) {
             return (
-                <main className="error-page">
-                    <h1>Something seems to have gone wrong</h1>
-                    <p>Try refreshing the page</p>
-                </main>
+                <section className="error container">
+                    <p>Sorry, that thing does not exist in Star Wars API!</p>
+                    <p>Try searching for another thing!</p>
+                </section>
             );
         }
         return this.props.children;
     }
 }
+export default ErrorPage;
